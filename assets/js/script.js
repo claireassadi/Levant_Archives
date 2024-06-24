@@ -334,7 +334,7 @@ $(function() {
             $('#network-graph').show();
             $(this).find('img').attr('src', 'assets/img/carte.png').attr('alt', 'map icon');
             $(this).find('p').text('Carte');
-            updateNetworkGraph(1945, 1950); // Initial load for 1945-1950
+            updateNetworkGraph(1945, 1950); // Démarrer à 1945-1950
         } else {
             $('#network-graph').hide();
             $('#map').show();
@@ -343,7 +343,7 @@ $(function() {
         }
     });
 
-    // ----------------------- Timeline Functionality --------------------------
+    // ----------------------- Timeline  --------------------------
 
     $('.timeline-point, .timeline-section').on('click', function() {
         const startYear = $(this).data('start-year');

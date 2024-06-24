@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         svg.selectAll("*").remove();
 
         const nodes = [];
-        const nodeSet = new Map(); // Use a Map to track node degrees
+        const nodeSet = new Map();
         const links = [];
 
         data.forEach(d => {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .selectAll("circle")
             .data(nodes)
             .enter().append("circle")
-            .attr("r", d => Math.sqrt(nodeSet.get(d.id)) * 2 + 3) // Scale the radius by the square root of the degree
+            .attr("r", d => Math.sqrt(nodeSet.get(d.id)) * 2 + 3) // Augmenter la largeur du noeud
             .attr("fill", d => {
                 switch (d.sigle) {
                     case 'F': return "blue";
