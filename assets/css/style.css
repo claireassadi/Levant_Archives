@@ -521,9 +521,5 @@ footer p{
 /*********************** Légendes ***********************/
 
 .attributions{
-    margin: 0 30%;
-}
-
-.attributions footer{
-    margin-top: 50px;
+    margin: 20% 30%;
 }
