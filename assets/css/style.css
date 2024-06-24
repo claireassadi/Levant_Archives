@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+body{
+    font-family: 'Sono', sans-serif;
+    /*background-color: #fad0a0;*/
+    background-color: #fce4c7;
+    overflow: hidden;
+}
+
+#container{
+    background-image: url("../img/big_desk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste la taille de l'image pour remplir la div */
+    background-position: center 50px; /* Centre l'image horizontalement et verticalement */
+    margin: 0 auto;
+    height: 80vh; /* Taille de la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infromations{
+    background-color: white;
+    z-index: 3;
+    padding: 10px;
+    margin-top: 90px;
+    border-radius: 30px;
+}
+
+span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fce4c7;
+    padding: 10px 0;
+    margin: 0 auto;
+    box-shadow: 1px 0px 10px #3a342e;
+    text-align: center;
+    z-index: 10;
+}
+
+h1{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1em;
+}
+
+h1:hover{
+    color: #c16160;
+    text-shadow: 10px 5px 5px #edebe9;
+}
+
+h2{
+    text-align: center;
+    margin: 15% auto 10px auto;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    
+}
+
+/*************************************** BARRE OUTILS ************************************/
+.barreOutils{
+    /*
+    background-color: #c1aa8e;
+    box-shadow: 5px 5px 5px #c1aa8e;
+    border-radius: 30px;
+    padding: 1%;
+    */
+    width: 90%;
+}
+
+.barreOutils a{
+    margin: 5px 10px 0 10px;
+    padding-top: 45px;
+    background-image: url("../img/folder.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    height: 9vh;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.barreOutils a:hover{
+    margin: 5px 10px 0 10px;
+    padding-top: 40px;
+    background-image: url("../img/folder2.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    width: 40px;
+    margin: 0 auto;
+}
+
+.barreOutils p{
+    margin: 0px 10px 10px 0px;
+}
+
+footer{
+    margin-left: 30px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 5px;
+}
+
+/*************************************** MAP ************************************/
+
+#map { 
+    max-height: 400px; 
+    max-width: 40%;
+    margin: 2% auto 2% auto;
+}
+
+/*********************** VOLET LATERAL ***********************/
+
+.volet_archives{
+    background-color: #CBB292;
+    width: 25%;
+    height: 100%;
+    /*z-index: 7;*/
+    position: absolute;
+    top: 0; right: 0;
+    overflow-y: auto;
+    border: solid #CBB292 2px;
+}
+
+.volet_reseaux {
+    background-color: #ccc;
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top: 0; left: 0;
+    overflow: hidden;
+    border: solid #CBB292 2px;
+}
+
+.volet_biographie{
+    background-color: #CBB292;
+    width: 25%;
+    height: 50%;
+    /*z-index: 7;*/
+    position: absolute;
+    top: 50%; left: 0;
+    overflow-y: auto;
+    border: solid #CBB292 2px;
+}
+
+/*********************** Biographies ***********************/
+
+#search-input {
+    width: 100%;
+    min-height: 35px;
+    border: solid 1px #CBB292;
+}
+
+.titre_volet {
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9; /* Assurez-vous que la couleur de fond du titre correspond à celle du conteneur */
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.biographie_entry {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.biographie_entry img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.biographie_entry div {
+    flex: 1;
+}
+
+.biographie_entry h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+}
+
+.biographie_entry p {
+    margin: 5px 0;
+}
+
+.biographie-info {
+    margin-left: 110px; /* Adjust according to the image width + margin */
+}
+
+
+/*********************** Annexes ***********************/
+
+
+.annexes_entry img {
+    box-sizing: content-box;
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+}
+
+/*********************** Reseaux ***********************/
+
+.volet_reseaux #network {
+    width: 100%;
+    height: 100%;
+    border: solid #CBB292 1px;
+    background-color: #CFDAF5;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.highlight {
+    stroke: rgba(0, 251, 255, 0.655);
+    stroke-width: 10;
+}
+
+.biographie_entry.highlight {
+    background-color: rgba(0, 251, 255, 0.655);
+}
+
+
+/*********************** Transition pour les volets ***********************/
+
+.volet {
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    overflow-y: auto;
+    border: solid black 2px;
+}
+
+/* Position initiale en dehors de la fenêtre */
+.volet-hidden-left {
+    transform: translateX(-100%);
+    display: none;
+}
+
+.volet-hidden-right {
+    transform: translateX(100%);
+    display: none;
+}
+
+.volet-visible {
+    transform: translateX(0);
+}
+
+/* Transition spécifique pour chaque volet */
+.volet_reseaux {
+    left: 0;
+}
+
+.volet_biographie {
+    left: 0;
+    top: 50%;
+}
+
+.volet_archives {
+    right: 0;
+    top: 0;
+    bottom: auto; /* Pour qu'il ne prenne pas toute la hauteur */
+}
+
+/*********************** Modal ***********************/
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal img {
+    max-width: 90%;
+    margin: 50px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#network-modal {
+    background-color: aliceblue;
+    width: 95%;
+    height: 90%;
+}
+
+#network-modal svg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*********************** Network graph ***********************/
+
+#network-graph {
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+#network-graph svg {
+    background-color: #CFDAF5;
+    margin-top: 20px;
+    height: 95%;
+    width: 100%;
+}
+
+#network-graph .g {
+    width: 100%;
+}
+
+/*********************** Animation des volets ***********************/
+
+.volet {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.volet_archives {
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.volet_reseaux {
+    right: 0;
+}
+
+.volet_biographie {
+    left: 0;
+    top: 50%;
+}
+
+.volet-hidden-left {
+    transform: translateX(-100%);
+}
+
+.volet-hidden-right {
+    transform: translateX(100%);
+}
+
+.volet-visible {
+    transform: translateX(0);
+}
+
+/*********************** Timeline ***********************/
+.timeline-container {
+    width: 40%;
+    margin: 20px 30% 0px 30%;
+}
+
+.timeline {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CFDAF5;
+    border-radius: 5px;
+}
+
+.timeline-point, .timeline-section {
+    padding: 5px;
+    background-color: #7F6E5D;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.timeline-section {
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.timeline-point:hover, .timeline-section:hover {
+    background-color: #CBB292;
+}
+
+.timeline-content {
+    margin: 20px 0;
+}
+
+/*********************** Toggle / hover ***********************/
+
+#reseaux-toggle:hover {
+    color: #7F6E5D;
+}
+
+#reseaux-map-toggle:hover p{
+    color: #7F6E5D;
+}
+
+/*********************** Légendes ***********************/
+
+.fr{
+    color: blue;
+}
+
+.syr{
+    color: green;
+}
+
+.brit{
+    color: pink;
+}
+
+.usa{
+    color: orange;
+}
+
+.lie{
+    color: rgb(187, 187, 4);
+}
+
+.urss{
+    color: red;
+}
+
+.obj{
+    color:purple;
+}
