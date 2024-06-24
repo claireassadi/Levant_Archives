@@ -523,3 +523,7 @@ footer p{
 .attributions{
     margin: 0 30%;
 }
+
+.attributions footer{
+    margin-top: 50px;
+}
