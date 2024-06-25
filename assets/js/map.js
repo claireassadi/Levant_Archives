@@ -52,7 +52,7 @@ $(document).ready(function() {
             var longitude = parseFloat(row.Longitude);
             var name = row.Lieu;
             var info = row.Informations;
-            var photo = row.Photo; // Assurez-vous que la colonne Photo contient les liens vers les images
+            var photo = row.Photo;
             var icon;
 
             // Déterminer l'icône en fonction du type de lieu
